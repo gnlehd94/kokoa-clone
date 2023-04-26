@@ -30,3 +30,26 @@
   left: -5px;
   top: -3px;
 }
+
+@-webkit-keyframes ratateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes ratateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  -webkit-animation: ratateCog 1s linear infinite;
+          animation: ratateCog 1s linear infinite;
+}
